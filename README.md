@@ -1,57 +1,50 @@
-Canteen Management System
-Canteen Management System is a console-based C++ application that simulates a canteen's operations. It offers two modes:
+# Canteen Management System
+### Canteen Management System is a CLI-based application built using C++ that allows customers to purchase items from the canteen and provides management tools for the owner. The application utilizes a local database to store information.
 
-Customer Mode: Browse the menu, select items, apply discount coupons, and generate an invoice.
-Admin Mode: Password-protected editing of the food menu (add, remove, or replace items) and view overall sales records.
+## Customers Section
+ 
+* Customers can purchase items from a pre-defined list of items by entering their serial number and quantity.  
+*  After selecting all of the desired items, customers are prompted to enter their name into the system. 
+* They are then directed to the checkout page, where they can review their purchase list and apply a coupon code for a 10-50% discount on their total amount.
+* Finally, customers are taken to the invoice generation page, where they can clearly see their name, the time of purchase, and a tabular format of all items purchased with the final amount to be paid.
 
+## Admin Section
+ Before accessing the admin page, users must complete a verification step by entering a password to confirm that they are a valid admin. Once verified, the admin has access to two options:
 
-Features
-Customer Experience:
-Display a dynamically managed menu using linked lists.
-Let customers select items by serial number and quantity.
-Apply discount coupons (e.g., GET10, FREE20) during checkout.
-Generate an invoice and record sales data.
+### I. Customize Food Menu
+1. Add New Item
+( Exact Position, Beginning, Bottom)
+2. Delete Item
+3. Replace Item
 
-Admin Functions:
-Secure access via a password (7890).
-Edit the menu by adding items at a specific position, at the beginning, or at the end.
-Remove or replace existing menu items.
-View overall sales records stored in salesdata.dat.
+### II. Check All the Sales he Made
+The admin can view all sales made by the canteen and the overall revenue generated.</br>
 
-Technical Aspects:
-Uses dynamic memory allocation (via malloc, calloc, and realloc) and linked lists.
-Implements file I/O for recording sales transactions.
-Utilizes system calls (like system("cls")) for console management (Windows-specific).
-
-Requirements :
-A C++ compiler (e.g., g++, Visual Studio)
-Windows OS is recommended (due to Windows-specific commands)
-Installation and Execution
-Clone or download this repository.
-Open a terminal/command prompt in the project directory.
-
-Compile the code:
-bash
-Copy
-Edit
-g++ -o CanteenManagementSystem main.cpp
-Run the executable:
-bash
-Copy
-Edit
-./CanteenManagementSystem
-(On Windows, you might need to run CanteenManagementSystem.exe)
-
-File Structure
-main.cpp: Contains the full source code.
-salesdata.dat: File where sales records are stored (generated during runtime).
-
-Future Enhancements
-Improve cross-platform compatibility by removing Windows-specific functions.
-Enhance input validation and error handling.
-Develop a graphical user interface (GUI) for a better user experience.
-Implement stronger security measures for admin access.
-
-License
-This project is open source. Contributions and suggestions are welcome!
+## Conclusion
+Canteen Management System is a simple and easy to use application that helps customers to purchase items and admin to manage the canteen sales and revenue. Try it out and let us know what you think.
+## Application UI and Screenshots</br>
+<p align="center">
+  <h2>#1 Application Starts ( Welcome Page )</h2>
+  <img src="/Screenshot (1).png">
+  </br><h2>#2 User Selection Page (Customer / Admin)</h2>
+  <img src="/Screenshot (2).png">
+  </br><h2>#3 Select Items Currently available in Canteen</h2>
+  <img src="/Screenshot (3).png">
+  </br><h2>#4 Fill Your Details Before Checkout</h2>
+  <img src="/Screenshot (4).png">
+  </br><h2>#5 Checkout and Apply Coupons</h2>
+  <img src="/Screenshot (5).png">
+  </br><h2>#6 Payment and Invoice</h2>
+  <img src="/Screenshot (6).png">
+  </br><h2>#7 Verification for user: admin</h2>
+  <img src="/Screenshot (7).png">
+  </br><h2>#8 Admin Mode Features</h2>
+  <img src="/Screenshot (8).png">
+  </br><h2>#9 Edit Food Menu Page</h2>
+  <img src="/Screenshot (9).png">
+  </br><h2>#10 Sample: Add New Item at Specific Positon</h2>
+  <img src="/Screenshot (10).png">
+  </br><h2>#11 Track Overall Sales</h2>
+  <img src="/Screenshot (11).png">
+</p>
 
